@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dbExample</string>
+    <string name="create">Create Database</string>
+    <string name="add">Add Contact</string>
+    <string name="delete">Delete Contact</string>
+    <string name="get">Get Contact</string>
+    <string name="deleteDB">Delete Database</string>
+</resources>
