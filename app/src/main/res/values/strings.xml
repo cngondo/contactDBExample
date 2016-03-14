@@ -5,4 +5,7 @@
     <string name="delete">Delete Contact</string>
     <string name="get">Get Contact</string>
     <string name="deleteDB">Delete Database</string>
+    <string name="nm">Name</string>
+    <string name="email">email</string>
+    <string name="id">ID</string>
 </resources>

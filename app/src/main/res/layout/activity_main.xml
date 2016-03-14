@@ -17,7 +17,8 @@
         android:id="@+id/btnCreateDB"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="createDatabase"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -29,7 +30,9 @@
         android:layout_toRightOf="@+id/btnCreateDB"
         android:layout_toEndOf="@+id/btnCreateDB"
         android:layout_marginLeft="49dp"
-        android:layout_marginStart="49dp" />
+        android:layout_marginStart="49dp"
+        android:onClick="addContact"
+        android:clickable="false"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -39,7 +42,9 @@
         android:layout_below="@+id/btnCreateDB"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="37dp" />
+        android:layout_marginTop="37dp"
+        android:onClick="deleteContact"
+        android:clickable="false"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -48,41 +53,59 @@
         android:id="@+id/btngetContact"
         android:layout_alignBottom="@+id/btnDeleteContact"
         android:layout_alignLeft="@+id/btnAddContact"
-        android:layout_alignStart="@+id/btnAddContact" />
+        android:layout_alignStart="@+id/btnAddContact"
+        android:onClick="getContact"
+        android:clickable="false"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/nameText"
         android:layout_below="@+id/btnDeleteContact"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:hint="@string/nm"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/nameText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint="@string/email"/>
 
     <EditText
         android:layout_width="50sp"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
+        android:id="@+id/idText"
+        android:layout_below="@+id/emailText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint="@string/id"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/deleteDB"
-        android:id="@+id/button5"
-        android:layout_below="@+id/editText3"
+        android:id="@+id/btnDeleteDB"
+        android:layout_below="@+id/idText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="deleteDatabase"
+        android:clickable="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactList"
+        android:layout_below="@+id/btnDeleteDB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+
 </RelativeLayout>
